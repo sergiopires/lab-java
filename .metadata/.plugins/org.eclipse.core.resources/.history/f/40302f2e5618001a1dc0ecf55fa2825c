@@ -1,0 +1,49 @@
+package Application;
+
+import java.util.Scanner;
+
+import Entities.Rented;
+
+public class Main {
+
+	public static void main(String[] args) {
+		 
+		
+		Scanner sc = new Scanner(System.in);
+		Rented[] vect = new Rented[10];
+		
+		System.out.println("How many rooms will be rented?");
+		int n = Integer.parseInt(sc.nextLine());
+	 
+		for(int i = 0; i < n; i++) {		
+			
+			System.out.println();
+					
+			System.out.println("Enter number room:");
+			int numberRoom = Integer.parseInt(sc.nextLine());
+			
+		
+			System.out.print("Enter name:");
+			String name = sc.nextLine();
+
+	
+			System.out.print("Enter email:");
+			String email = sc.nextLine();		
+			  
+			vect[numberRoom] = new Rented(name, email);
+		}
+		
+		System.out.println("\n");
+		
+		System.out.println("busy rooms");
+		 for(int i = 0; i < 10; i++) {
+			 
+			 if(vect[i] != null) {
+			 
+				 System.out.println("#"+ i + vect[i]);
+			 }
+		 }
+		
+		sc.close();
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;public static void listas()&apos; from &apos;Application.Main.main()&apos; to &apos;Application.Main&apos;&#x0D;&#x0A;- Original project: &apos;lab-Listas&apos;&#x0D;&#x0A;- Method name: &apos;listas&apos;&#x0D;&#x0A;- Destination type: &apos;Application.Main&apos;&#x0D;&#x0A;- Declared visibility: &apos;public&apos;&#x0D;&#x0A;- Declare thrown runtime exceptions&#x0D;&#x0A;- Generate method comment" comments="true" description="Extract method &apos;listas&apos;" destination="0" exceptions="true" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src&lt;Application{Main.java" name="listas" replace="false" selection="189 869" stamp="1575728269356" version="1.0" visibility="1"/>
+</session>

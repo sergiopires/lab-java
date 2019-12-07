@@ -1,0 +1,29 @@
+package Application;
+
+import java.util.Scanner;
+
+import Entities.Product;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		Product p =  new Product();
+		//Enter product
+		System.out.println("Enter name");
+		p.name = sc.nextLine();
+		
+	   System.out.println("Enter price");
+	   p.price = sc.nextDouble();
+	   
+	   System.out.println("Enter quantity");
+	   p.quantity = sc.nextInt();
+		
+		
+		
+		sc.close();
+
+	}
+
+}

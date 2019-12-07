@@ -1,0 +1,43 @@
+import java.io.Console;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Locale.setDefault(Locale.US);
+
+		// Digitar um valor de 1 a 7 que representa uma semana
+		Scanner in = new Scanner(System.in);
+
+		int numero = in.nextInt();
+
+		String dia;
+
+		switch (numero) {
+		case 1:
+			dia = "domingo";
+			break;
+		case 2:
+			dia = "segunda-feira";
+		case 3:
+			dia = "terça-feira";
+		case 4:
+			dia = "quarta-feira";
+		case 5:
+			dia = "quinta-feira";
+		case 6:
+			dia = "sexta-feira";
+		case 7:
+			dia = "sabado";1
+		default:
+			dia = "dia inválido";
+		}
+		
+		System.out.println(dia);
+
+	}
+
+}

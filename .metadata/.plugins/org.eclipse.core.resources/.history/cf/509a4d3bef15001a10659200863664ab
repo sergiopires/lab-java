@@ -1,0 +1,29 @@
+import java.io.Console;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Locale.setDefault(Locale.US);
+
+		Scanner in = new Scanner(System.in);
+
+		double x = 3.0;
+		double y = -5;
+		double a, b, c;
+
+		a = Math.sqrt(x);
+		b = Math.sqrt(y);
+		c = Math.sqrt(25.0);
+		
+		System.out.println("A raiz quadrada de " + x + " é: " +  a);
+		System.out.println("A raiz quadrada de " + y + " é: " + b);
+		System.out.println("A raiz quadrada de " + c + " é: " + c);
+
+		in.close();
+	}
+
+}

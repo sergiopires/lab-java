@@ -1,0 +1,24 @@
+import java.io.Console;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Locale.setDefault(Locale.US);
+
+		Scanner in = new Scanner(System.in);
+		String s = in.next();
+		int n = in.nextInt();
+		// double s = in.nextDouble();
+		// System.out.printf(Locale.US, "valor digitado %.2f%n", s);
+
+		System.out.println(s);
+		System.out.println(n);
+
+		in.close();
+	}
+
+}

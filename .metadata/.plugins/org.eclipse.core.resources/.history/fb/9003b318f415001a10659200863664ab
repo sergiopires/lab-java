@@ -1,0 +1,26 @@
+import java.io.Console;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Locale.setDefault(Locale.US);
+
+		// Valor do pacote de 100 min = R$50, se passar cobrar R$2 o min
+
+		Scanner in = new Scanner(System.in);
+
+		int minuto = in.nextInt();
+		double conta = 50.0;
+
+		if (minuto > 100) {
+			conta = (minuto - 100) * 2;
+		}
+		System.out.println("O valor da conta é: R$ " + conta);
+
+	}
+
+}

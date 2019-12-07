@@ -1,0 +1,32 @@
+package Application;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+		List<String> lista = new ArrayList<>();
+		
+		lista.add("Amauri");
+		lista.add("Reynaldo");
+		lista.add("Bob");
+		lista.add("Maria");
+		lista.add("Jose");
+		
+		System.out.println(lista.size());		
+		for(String l : lista) {
+			System.out.println(l);
+		}
+		
+		System.out.println("Index list: " + lista.indexOf("Bob"));
+		
+		
+
+			
+	}
+
+}

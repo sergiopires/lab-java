@@ -1,0 +1,20 @@
+import java.io.Console;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//Expressão ternária
+		double preco = 10.0;
+		
+		double desconto =  (preco < 20.0) ? preco * 0.1 : preco * 0.05 ;
+		
+		System.out.println(desconto);
+		Scanner in = new Scanner(System.in);
+		
+	}
+
+}

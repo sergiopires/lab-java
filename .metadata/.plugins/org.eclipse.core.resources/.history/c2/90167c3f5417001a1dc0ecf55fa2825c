@@ -1,0 +1,43 @@
+import java.io.Console;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		  Scanner sc = new Scanner(System.in);
+		  
+		  int a = sc.nextInt();
+		  int b = sc.nextInt();
+		  int c = sc.nextInt();
+		  
+		  int maior = max(a,b,c);
+		  
+		  mostrarResultado(maior);
+		 
+
+	}
+
+	/**
+	 * 
+	 */
+	public static int max(int x, int y, int z) {
+		int res = 0;
+		if (x > y && x > z) {
+			res = x;
+		} else if (y > x && y > z) {
+			res = y;
+		} else {
+			res = z;
+		}
+		return res;
+	}
+	
+	public static void mostrarResultado(int maior) {
+		System.out.println("O maior é " + maior);
+	}
+
+}

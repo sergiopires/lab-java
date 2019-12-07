@@ -1,0 +1,50 @@
+package Application;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+		List<String> lista = new ArrayList<>();
+		
+		lista.add("Amauri");
+		lista.add("Reynaldo");
+		lista.add("Bob");
+		lista.add("Maria");
+		lista.add("Jose");
+		
+		System.out.println(lista.size());		
+		for(String l : lista) {
+			System.out.println(l);
+		}
+		System.out.println("--------------");
+		//Posição no array
+		System.out.println("Index list: " + lista.indexOf("Bob"));
+		System.out.println("--------------");
+		//Remove at
+		System.out.println("Remover o Reynaldo da lista "  );
+		lista.removeIf(x -> x.charAt(0) == 'R');
+		
+		for(String x : lista) {
+			System.out.println(x);
+		}
+		System.out.println("---------");
+		System.out.println("montar um filtro: ");
+		
+		List<String> result = lista.stream().filter(x->x.charAt(0) == 'A').collect(Collectors.toList());
+	 
+		
+		for(String x : result) {
+			System.out.println(x);
+		}
+		
+		
+			
+	}
+
+}

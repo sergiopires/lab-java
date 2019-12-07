@@ -1,0 +1,58 @@
+package Entities;
+
+public class Conta {
+	private int conta;
+	private String nome;
+	private double saldo;
+	
+	private final double taxa = 5.00;
+	
+	public int getConta() {
+		return conta;
+	}
+	public void setConta(int conta) {
+		this.conta = conta;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public double getSaldo() {
+		return saldo;
+	}
+	private void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+	
+	public Conta(int conta, String nome, double saldo) {
+		super();
+		this.conta = conta;
+		this.nome = nome;
+		this.saldo = saldo;
+	}
+	
+	public Conta(int conta, String nome) {
+		super();
+		this.conta = conta;
+		this.nome = nome;
+		setSaldo(0);
+	}
+	
+	public void Deposito(double valor) {		
+		setSaldo(valor);		
+	}
+	
+	public void Saque(double valor) {
+		double saldo = getSaldo();
+		 saldo -=  valor + taxa;		 
+		 setSaldo(saldo);
+	}
+	
+	public String toString() {
+	 return	 "Account data: Account "  + getConta() + " Holder: " + getNome() + ", Balance: " + getSaldo();
+	 
+	}
+
+}

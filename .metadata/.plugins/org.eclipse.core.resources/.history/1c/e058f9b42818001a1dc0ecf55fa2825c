@@ -1,0 +1,37 @@
+package Application;
+
+import java.util.Scanner;
+
+import Entities.Conta;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	 
+	
+		Scanner sc =  new Scanner(System.in);
+		
+		System.out.println("Enter account number");
+		int conta = sc.nextInt();	
+		
+		System.out.println("Enter account holder");
+		String name = sc.nextLine()	;
+		
+		System.out.println("Is there na initial deposit (y/n)?");
+		String temDeposito = sc.nextLine();
+		
+		System.out.println("Enter initial deposit value:");
+		double deposito = sc.nextDouble();
+		
+		Conta c = new Conta(conta, name);
+		
+		if(temDeposito == "y") {
+			c.Deposito(deposito);
+		}
+	System.out.println(c);
+		sc.close();
+
+	}
+
+}

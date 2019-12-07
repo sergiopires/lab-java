@@ -1,0 +1,16 @@
+package Entities;
+
+public class Rented {
+
+	public String name;
+	public String email;
+
+	
+	public Rented(String name, String email) {
+	
+		this.name = name;
+		this.email = email;
+		
+	}
+
+}

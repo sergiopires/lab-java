@@ -1,0 +1,25 @@
+package Entities;
+
+public class Rectangle {
+
+	public double width;
+	public double height;
+
+	public double area() {
+
+		return this.width * this.height;
+	}
+
+	public double perimetro() {
+		double p = width + width + height + height;
+		return p;
+	}
+
+	public double diagonal() {
+		//Fórmula para calcular a diagonal  d2=a2+b2
+		double p = Math.sqrt(( Math.pow(width, 2) + Math.pow(height, 2)));
+		return p;
+	}
+	
+
+}
